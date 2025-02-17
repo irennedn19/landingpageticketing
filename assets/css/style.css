@@ -149,6 +149,10 @@ p {
   background-color: #3698EE;
 }
 
+.button-container {
+  margin-left: auto; /* Mendorong tombol ke kanan */
+}
+
 .button:first-child {
   margin-right: 10px; /* Memberikan jarak ke tombol pertama */
 }
