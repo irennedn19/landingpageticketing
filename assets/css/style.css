@@ -2351,12 +2351,14 @@ body.search-show .navbar .form-inline .search-element {
 .faq-item .faq-header .faq-btn {
   background: #fff;
   border: none;
-  padding: 20px 33px 20px 25px;
+  padding: 10px 33px 10px 25px;
   white-space: normal;
   width: 100%;
   text-align: left;
   cursor: pointer;
   position: relative;
+  border-radius: 5px;
+
 }
 
 .faq-item .faq-header .faq-btn.collapsed::after {
@@ -2416,8 +2418,8 @@ body.search-show .navbar .form-inline .search-element {
 }
 
 .faq-item .faq-header .faq-btn span {
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 70;
   color: #313450;
   display: block;
   padding-top: 10px;
@@ -2444,6 +2446,13 @@ body.search-show .navbar .form-inline .search-element {
   bottom: 0;
   right: 0;
   z-index: -1;
+}
+
+.ud-faq .shape {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2477,11 +2486,6 @@ body.search-show .navbar .form-inline .search-element {
   }
 }
 
-/* END FAQ */
-
-
-
-/* faq */
 .ud-faq {
   padding-top: 120px;
   padding-bottom: 90px;
@@ -2497,78 +2501,6 @@ body.search-show .navbar .form-inline .search-element {
   }
 }
 
-.ud-faq .shape {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  bottom: 0;
-}
-
-.ud-single-faq {
-  background: var(--white);
-  border: 1px solid #f3f4fe;
-  -webkit-box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
-          box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
-
-.ud-single-faq .ud-faq-btn {
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  background: transparent;
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--heading-color);
-  opacity: 0.88;
-  padding: 30px;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px), (max-width: 767px) {
-  .ud-single-faq .ud-faq-btn {
-    padding: 15px;
-  }
-}
-
-.ud-single-faq .ud-faq-btn.collapsed span.icon i {
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.ud-single-faq .ud-faq-btn span.icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 42px;
-  height: 42px;
-  background: rgba(48, 86, 211, 0.06);
-  border-radius: 10px;
-  color: var(--primary-color);
-  margin-right: 24px;
-}
-
-.ud-single-faq .ud-faq-btn span.icon i {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  font-size: 14px;
-  font-weight: 700;
-}
-
 .ud-single-faq .ud-faq-body {
   padding: 0px 30px 40px 95px;
 }
@@ -2578,9 +2510,162 @@ body.search-show .navbar .form-inline .search-element {
     padding: 0px 16px 20px 82px;
   }
 }
-/* end faq */
 
 /* END FAQ */
+
+
+
+
+/* Halaman FAQ */
+
+
+
+/*======================================
+    Faq CSS
+========================================*/
+.faq .nav-tabs {
+  border: none;
+  background: #F4F7FA;
+  margin-bottom: 50px;
+}
+
+.faq .nav-tabs .nav-link {
+  padding: 15px 30px;
+  border: none;
+  background: transparent;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 0;
+  margin-right: 5px;
+  position: relative;
+}
+
+.faq .nav-tabs .nav-link::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  margin-left: -10px;
+  bottom: -14px;
+  border: 10px solid #0EDC8D;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.faq .nav-tabs .nav-link.active:before {
+  bottom: -19px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.faq .nav-tabs .nav-link:last-child {
+  margin-right: 0;
+}
+
+.faq .nav-tabs .nav-link.active {
+  color: #fff;
+  background: #0EDC8D;
+}
+
+.faq .nav-tabs .nav-link:hover {
+  color: #fff;
+  background: #0EDC8D;
+}
+
+.accordion-item .accordion-button {
+  /* border-radius: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  border: none;
+  border: 1px solid #eee; */
+
+  font-size: 16px; /* Ukuran teks lebih besar */
+  font-weight: 600; /* Membuat teks lebih tebal */
+  padding: 20px 25px; /* Menambah padding agar lebih besar */
+  text-align: left; /* Menjaga teks tetap kiri */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px; /* Tambahkan radius agar lebih modern */
+  border: 1px solid #ddd; /* Tambahkan border untuk kontras */
+  background: #fff; /* Warna default putih */
+  color: #333; /* Warna teks gelap untuk kontras */
+  transition: all 0.3s ease;
+}
+
+.accordion-item .accordion-button span {
+  float: left;
+}
+
+.accordion-item .accordion-button i {
+  float: right;
+  font-size: 13px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #0EDC8D;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button:not(.collapsed) i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-collapse {
+  border: none;
+}
+
+.accordion-body {
+  border: 1px solid #eee;
+  border-radius: 0;
+  padding: 30px 20px;
+}
+
+.accordion-body p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.accordion-body p:last-child {
+  margin: 0;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+}
+
+
+/* END halaman FAQ */
 
 
 
