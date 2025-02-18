@@ -1700,6 +1700,64 @@ p {
   background-color: rgba(54, 152, 238, 0.7);
 }
 
+/* Style agar mirip dengan template */
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Efek shadow */
+}
+
+/* Style header tabel */
+.table thead {
+  background: #f8f9fa;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle; /* Pastikan header di tengah */
+}
+
+.table th {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  text-align: center; /* Header di tengah */
+  vertical-align: middle; /* Supaya teks ada di tengah secara vertikal */
+}
+
+/* Style isi tabel */
+.table td {
+  padding: 15px;
+  font-size: 14px;
+  border: none;
+  background: #ffffff;
+  vertical-align: middle; /* Supaya teks ada di tengah secara vertikal */
+}
+
+/* Rata kiri hanya untuk kolom pertama (Fitur) */
+.table td:first-child {
+  text-align: left;
+}
+
+/* Warna dan shadow untuk baris */
+.table tbody tr {
+  transition: all 0.3s ease-in-out;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Warna khusus untuk teks */
+.text-primary {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.text-purple {
+  color: #8401FF;
+  font-weight: bold;
+}
+
+
 /*===========================
     10.DOWNLOAD APP css 
 ===========================*/
