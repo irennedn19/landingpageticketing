@@ -1912,7 +1912,7 @@ body.search-show .navbar .form-inline .search-element {
   background-color: rgba(54, 152, 238, 0.7);
 }
 
-/* Style agar mirip dengan template */
+/* Style agar mirip dengan */
 .table {
   border-radius: 10px;
   overflow: hidden;
@@ -3322,6 +3322,30 @@ body.search-show .navbar .form-inline .search-element {
 
 /* end account login */
 
+
+/* start profile */
+.profile-card {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 20px;
+}
+.profile-info table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.profile-info td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.profile-info tr:last-child td {
+  border-bottom: none;
+}
+.btn-primary {
+  width: 35%;
+  font-weight: bold;
+}
+
+/* end profile */
 
 /*===========================
         12.FOOTER css 
