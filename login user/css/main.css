@@ -767,10 +767,6 @@ p {
   background-color: rgba(54, 152, 238, 0.1);
 }
 
-
-
-
-
 .navbar .active .nav-link {
   color: #fff;
   font-weight: 700; }
@@ -824,159 +820,6 @@ display: flex; }
 @media (max-width: 575.98px) {
 body.search-show .navbar .form-inline .search-element {
   display: block; }}
-
-
-  /* profile */
-
-
-  .account-icon {
-    position: absolute;
-    right: 60px;
-  }
-  
-  .account-icon a {
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    color: #FF6B6B;
-    border-radius: 50%;
-  }
-  
-  .account-icon a:hover {
-    color: #fff;
-    background: #FF6B6B;
-  }
-  
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-btn {
-      margin-right: 60px;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .header-btn {
-      margin-right: 40px;
-    }
-  }
-  
-  .header-btn .main-btn {
-    font-size: 16px;
-    padding: 10px 30px;
-    font-weight: 400;
-  }
-  
-  .header-btn .main-btn.account-btn {
-    border: 1px solid #FF6B6B;
-    margin-right: 15px;
-    background: transparent;
-    color: #FF6B6B;
-    position: relative;
-    padding-right: 50px;
-  }
-  
-  .header-btn .main-btn.account-btn::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 8px;
-    height: 8px;
-    right: 30px;
-    margin-top: -4px;
-    pointer-events: none;
-    top: 50%;
-    transform-origin: 66% 66%;
-    transform: rotate(45deg);
-    transition: all 0.3s ease-out 0s;
-    border-bottom: 2px solid #FF6B6B;
-    border-right: 2px solid #FF6B6B;
-  }
-  
-  @media (max-width: 767px) {
-    .header-btn .main-btn.account-btn {
-      padding: 10px 14px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .d-md-block {
-      display: block !important;
-      margin-top: -10px;
-    }
-  }
-  
-  .sticky .navbar-toggler .toggler-icon {
-    background-color: #333F57;
-  }
-  
-  .sticky .navbar-nav .nav-item a {
-    color: #333F57;
-  }
-  
-  /* .sticky .navbar-nav .nav-item a::before {
-    background-color: #FF6B6B;
-  } */
-  
-  /* .sticky .navbar-nav .nav-item a.active, .sticky .navbar-nav .nav-item a:hover {
-    color: #FF6B6B;
-  } */
-  
-  .sticky .navbar-nav .nav-item a.header-btn {
-    color: #fff;
-  }
-  
-  .dropdown-nav {
-    position: absolute;
-    top: 110%;
-    left: 0;
-    width: 200px;
-    background: #fff;
-    padding: 20px;
-    opacity: 0;
-    visibility: hidden;
-    min-height: 300px;
-    transition: all 0.3s ease-out 0s;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  }
-  
-  @media (max-width: 767px) {
-    .dropdown-nav {
-      right: 0;
-      left: auto;
-    }
-  }
-  
-  .dropdown-nav li {
-    margin-bottom: 12px;
-  }
-  
-  .dropdown-nav li:last-child {
-    margin-bottom: 0;
-  }
-  
-  .dropdown-nav li:hover a {
-    display: block;
-    color: #FF6B6B;
-  }
-  
-  .dropdown-nav li a {
-    color: #333F57;
-  }
-  
-  .header-btn li {
-    position: relative;
-  }
-  
-  .header-btn li:hover .dropdown-nav {
-    opacity: 1;
-    visibility: visible;
-  }
-
-
-  /* end profile */
-
 
 /*===== HEADER HERO =====*/
 .header_hero {
@@ -2351,14 +2194,12 @@ body.search-show .navbar .form-inline .search-element {
 .faq-item .faq-header .faq-btn {
   background: #fff;
   border: none;
-  padding: 10px 33px 10px 25px;
+  padding: 20px 33px 20px 25px;
   white-space: normal;
   width: 100%;
   text-align: left;
   cursor: pointer;
   position: relative;
-  border-radius: 5px;
-
 }
 
 .faq-item .faq-header .faq-btn.collapsed::after {
@@ -2418,8 +2259,8 @@ body.search-show .navbar .form-inline .search-element {
 }
 
 .faq-item .faq-header .faq-btn span {
-  font-size: 15px;
-  font-weight: 70;
+  font-size: 25px;
+  font-weight: 700;
   color: #313450;
   display: block;
   padding-top: 10px;
@@ -2446,13 +2287,6 @@ body.search-show .navbar .form-inline .search-element {
   bottom: 0;
   right: 0;
   z-index: -1;
-}
-
-.ud-faq .shape {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  bottom: 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2486,6 +2320,11 @@ body.search-show .navbar .form-inline .search-element {
   }
 }
 
+/* END FAQ */
+
+
+
+/* faq */
 .ud-faq {
   padding-top: 120px;
   padding-bottom: 90px;
@@ -2501,6 +2340,78 @@ body.search-show .navbar .form-inline .search-element {
   }
 }
 
+.ud-faq .shape {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+}
+
+.ud-single-faq {
+  background: var(--white);
+  border: 1px solid #f3f4fe;
+  -webkit-box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
+          box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.ud-single-faq .ud-faq-btn {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--heading-color);
+  opacity: 0.88;
+  padding: 30px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), (max-width: 767px) {
+  .ud-single-faq .ud-faq-btn {
+    padding: 15px;
+  }
+}
+
+.ud-single-faq .ud-faq-btn.collapsed span.icon i {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.ud-single-faq .ud-faq-btn span.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: rgba(48, 86, 211, 0.06);
+  border-radius: 10px;
+  color: var(--primary-color);
+  margin-right: 24px;
+}
+
+.ud-single-faq .ud-faq-btn span.icon i {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .ud-single-faq .ud-faq-body {
   padding: 0px 30px 40px 95px;
 }
@@ -2510,162 +2421,9 @@ body.search-show .navbar .form-inline .search-element {
     padding: 0px 16px 20px 82px;
   }
 }
+/* end faq */
 
 /* END FAQ */
-
-
-
-
-/* Halaman FAQ */
-
-
-
-/*======================================
-    Faq CSS
-========================================*/
-.faq .nav-tabs {
-  border: none;
-  background: #F4F7FA;
-  margin-bottom: 50px;
-}
-
-.faq .nav-tabs .nav-link {
-  padding: 15px 30px;
-  border: none;
-  background: transparent;
-  background-color: transparent;
-  font-size: 14px;
-  font-weight: 600;
-  border: none;
-  border-radius: 0;
-  margin-right: 5px;
-  position: relative;
-}
-
-.faq .nav-tabs .nav-link::before {
-  position: absolute;
-  content: "";
-  left: 50%;
-  margin-left: -10px;
-  bottom: -14px;
-  border: 10px solid #0EDC8D;
-  border-bottom-color: transparent;
-  border-right-color: transparent;
-  border-left-color: transparent;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.faq .nav-tabs .nav-link.active:before {
-  bottom: -19px;
-  opacity: 1;
-  visibility: visible;
-}
-
-.faq .nav-tabs .nav-link:last-child {
-  margin-right: 0;
-}
-
-.faq .nav-tabs .nav-link.active {
-  color: #fff;
-  background: #0EDC8D;
-}
-
-.faq .nav-tabs .nav-link:hover {
-  color: #fff;
-  background: #0EDC8D;
-}
-
-.accordion-item .accordion-button {
-  /* border-radius: 0px;
-  font-size: 14px;
-  font-weight: 500;
-  width: 100%;
-  display: block;
-  overflow: hidden;
-  border: none;
-  border: 1px solid #eee; */
-
-  font-size: 16px; /* Ukuran teks lebih besar */
-  font-weight: 600; /* Membuat teks lebih tebal */
-  padding: 20px 25px; /* Menambah padding agar lebih besar */
-  text-align: left; /* Menjaga teks tetap kiri */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  border-radius: 8px; /* Tambahkan radius agar lebih modern */
-  border: 1px solid #ddd; /* Tambahkan border untuk kontras */
-  background: #fff; /* Warna default putih */
-  color: #333; /* Warna teks gelap untuk kontras */
-  transition: all 0.3s ease;
-}
-
-.accordion-item .accordion-button span {
-  float: left;
-}
-
-.accordion-item .accordion-button i {
-  float: right;
-  font-size: 13px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: #0EDC8D;
-  color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.accordion-button:not(.collapsed) i {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.accordion-item:first-of-type .accordion-button {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.accordion-item:last-of-type .accordion-button.collapsed {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.accordion-button::after {
-  display: none;
-}
-
-.accordion-collapse {
-  border: none;
-}
-
-.accordion-body {
-  border: 1px solid #eee;
-  border-radius: 0;
-  padding: 30px 20px;
-}
-
-.accordion-body p {
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-
-.accordion-body p:last-child {
-  margin: 0;
-}
-
-.accordion-item {
-  margin-bottom: 20px;
-}
-
-
-/* END halaman FAQ */
 
 
 
@@ -3322,111 +3080,6 @@ body.search-show .navbar .form-inline .search-element {
 
 /* end account login */
 
-
-/*=====================
-    GANTI PASSWORD CSS
-======================*/
-
-/* Style umum */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-h4 {
-  margin-bottom: 20px; /* Beri jarak 20px dari bawah judul */
-}
-
-/* Background dengan gambar */
-.background {
-  background: url("../images/background.jpg") no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Style form container */
-.form-container {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-  width: 500px;
-  padding: 30px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-
-/* Style logo */
-.logo {
-  width: 80px;
-}
-
-/* Icon home */
-.home-icon {
-  font-size: 24px;
-  text-decoration: none;
-  color: black;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-}
-
-/* Style input fields */
-.form-control {
-  width: 443px !important;  /* Panjang input */
-  height: 51px !important;  /* Tinggi input */
-  border-radius: 5px;
-  font-size: 16px;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
-
-/* Jarak antar form input */
-.form-group {
-  margin-bottom: 25px; /* Memberi jarak antar isian */
-}
-
-/* Style tombol ubah */
-.button-ubah {
-  background-color: #183AFF;  /* Warna biru */
-  color: white;  /* Warna tulisan putih */
-  border: none;
-  width: 48%;
-  height: 50px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.button-ubah:hover{
-  background-color: #0f2bcf; /*warna lebih gelap kalau di hover */
-}
-
-/* Style tombol batal */
-.button-batal{
-  background-color: #E70000; /*warna merah*/
-  color: white;  /* Warna tulisan putih */
-  border: none;
-  width: 48%;
-  height: 50px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.btn-batal:hover {
-  background-color: #c00000; /* Warna lebih gelap saat hover */
-}
-
-/* Style untuk tombol agar sejajar */
-.button-group {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
 
 /*===========================
         12.FOOTER css 
