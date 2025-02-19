@@ -2864,6 +2864,111 @@ p {
 /* end account login */
 
 
+/*=====================
+    GANTI PASSWORD CSS
+======================*/
+
+/* Style umum */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h4 {
+  margin-bottom: 20px; /* Beri jarak 20px dari bawah judul */
+}
+
+/* Background dengan gambar */
+.background {
+  background: url("../images/background.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style form container */
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  width: 500px;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Style logo */
+.logo {
+  width: 80px;
+}
+
+/* Icon home */
+.home-icon {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+/* Style input fields */
+.form-control {
+  width: 443px !important;  /* Panjang input */
+  height: 51px !important;  /* Tinggi input */
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Jarak antar form input */
+.form-group {
+  margin-bottom: 25px; /* Memberi jarak antar isian */
+}
+
+/* Style tombol ubah */
+.button-ubah {
+  background-color: #183AFF;  /* Warna biru */
+  color: white;  /* Warna tulisan putih */
+  border: none;
+  width: 48%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button-ubah:hover{
+  background-color: #0f2bcf; /*warna lebih gelap kalau di hover */
+}
+
+/* Style tombol batal */
+.button-batal{
+  background-color: #E70000; /*warna merah*/
+  color: white;  /* Warna tulisan putih */
+  border: none;
+  width: 48%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-batal:hover {
+  background-color: #c00000; /* Warna lebih gelap saat hover */
+}
+
+/* Style untuk tombol agar sejajar */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
 /*===========================
         12.FOOTER css 
 ===========================*/
